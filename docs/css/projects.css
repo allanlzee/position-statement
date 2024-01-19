@@ -1,0 +1,183 @@
+/* Project Section */
+.my-projects {
+  position: relative; 
+  padding-top: auto;
+  padding-bottom: 0;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(45deg, #54dbf3, #ffc23f);
+}
+  
+.portfolio-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.portfolio-img:hover {
+  animation: shake 0.75s; 
+  animation-iteration-count: infinite; 
+}
+  
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-title-projects {
+  font-size: 40px;
+  color: darkblue; 
+  margin-top: 2em; 
+}
+
+.section-subtitle-projects {
+  font-size: 20px;
+  color: darkblue;
+}
+  
+@keyframes shake {
+  /* Credits: w3schools */ 
+  0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+  10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+  30% { transform: translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+  50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+  60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+  70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+  80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+  90% { transform: translate(0.5px, 1px) rotate(0deg); }
+  100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
+}
+  
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* End of Project Section */
+
+/* Coding Project Grid Section */
+  
+.coding-project-grid {
+  display: grid; 
+  grid-column-gap: 50px; 
+  grid-row-gap: 50px; 
+  font-size: 20px; 
+  margin-bottom: 2.5em; 
+}
+
+.android-development {
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+}
+
+.python {
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+}
+
+.front-end-development {
+  grid-column-start: 1; 
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.api-projects {
+  grid-column-start: 2; 
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.project-pictures {
+  margin: auto;
+  margin-top: 1em; 
+  margin-bottom: 1.5em;
+  width: 80%; 
+  height: 80%; 
+  transform-origin: center; 
+}
+
+.coding-projects {
+  color: rgb(21, 11, 155);
+  padding-bottom: 0.75em;
+}
+
+.coding-projects:hover {
+  background: white;
+  animation: scale 200ms ease-in-out forwards; 
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.05); 
+  }
+}
+
+@media (max-width: 825px) {
+  .coding-project-grid {
+    display: grid; 
+    grid-column-gap: 1em; 
+    grid-template-areas:
+      "div"
+      "div"
+      "div"
+      "div";
+    align-items: center;
+  }
+
+  .android-development {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+  }
+
+  .python {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+  }
+
+  .front-end-development {
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .api-projects {
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-bottom: 2em; 
+  }
+
+  .project-pictures {
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 1em; 
+    margin-bottom: 2.5em;
+    width: 70%; 
+    height: 40%; 
+  }
+
+  .coding-projects {
+    padding-bottom: 0.25em;
+  }
+}
+
+/* End of Coding Project Grid Section */ 

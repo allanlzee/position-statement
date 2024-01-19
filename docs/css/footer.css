@@ -1,0 +1,126 @@
+/* Footer Section */
+
+.footer-section {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(45deg, #0273fe, #af0101); 
+  margin: auto auto 0 auto; 
+  align-items: center; 
+}
+
+.navigation-list {
+  margin-top: 1em; 
+}
+  
+.footer-link {
+  font-size: 24px;
+  color: white;
+}
+
+.foot-section-subheading {
+  font-size: 2rem; 
+  color: white; 
+}
+
+.footer-link-violin {
+  font-size: 24px; 
+  color: white; 
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white; 
+  font-size: 1.25em; 
+}
+
+.footer__link:hover {
+  cursor: pointer; 
+  animation: scale 200ms ease-in-out forwards; 
+}
+
+.logo-link {
+  align-self: center;
+}
+
+.logo-list {
+  display: flex;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+  margin-top: 3em; 
+  background-color: white;
+}
+
+.logo-picture {
+  justify-self: center; 
+}
+
+.logo-github {
+  height: 50%; 
+  width: 50%; 
+}
+
+.logo-instagram {
+  height: 40%; 
+  width: 40%; 
+  margin-top: 1.25em; 
+}
+
+.logo-linkedin {
+  height: 50%;
+  width: 50%;
+  margin-top: 1.25em;
+}
+
+@media (min-width: 1050px) {
+  .logo-list {
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+    margin-left: 1em; 
+    flex-direction: row; 
+    grid-template-columns: 3;
+  }
+
+  .logo-github {
+    margin: none; 
+    height: 100%; 
+    width: 100%; 
+  }
+
+  .logo-instagram {
+    margin: none; 
+    margin-top: 0em; 
+    height: 40%; 
+    width: 40%; 
+  }
+
+  .logo-recruit {
+    margin: none; 
+    height: 55%; 
+    width: 55%; 
+  }
+}
+  
+.footer-logo {
+  margin: auto; 
+}
+
+#footer-logo-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: auto; 
+  margin-top: 3em; 
+}
+
+.footer-text {
+  font-size: 18px; 
+  color: white;  
+}
+
+#footer-name {
+  font-size: 22px; 
+  color: white;
+}
+
+/* End of Footer Section */

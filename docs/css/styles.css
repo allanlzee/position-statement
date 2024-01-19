@@ -1,0 +1,339 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  --primary-font: "Source Sans Pro", sans-serif;
+  --secondary-font: "Source Code Pro", monospace;
+
+  --weight-reg: 300;
+  --weight-bold: 900;
+
+  --color-light: #fff;
+  --color-dark: #303030;
+  --color-accent: #16e0bd;
+
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body: 1rem;
+  --font-size-description: 20px;
+
+  --description-width: 50%; 
+
+  --img-width: 100%;
+  --img-width-education: 100%; 
+
+  --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+}
+
+/* For Larger Screen Size */
+
+@media (min-width: 601px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+
+    --img-width: 80%;
+    --img-width-education: 25%; 
+  }
+}
+
+@media (max-width: 599px){
+  :root {
+    --fs-h1: 3.5rem; 
+    --fs-h2: 3.25rem;
+    --fs-h3: 1rem; 
+    --fs-body: 0.85rem; 
+    
+    --font-size-description: 16px;
+    --description-width: 100%; 
+  }
+
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  margin: 0;
+  bottom: 0;
+  font-family: var(--primary-font);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+
+/* General Features */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.footer-subheading {
+  font-size: 40px;
+  color: darkblue;
+}
+
+.portfolio-img {
+  height: 50%;
+  width: 50%;
+}
+
+/* Typography */
+
+strong {
+  font-weight: bold;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+footer {
+  padding: 5em 2em;
+}
+
+header {
+  padding: 5em 2em;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+.underh1 {
+  font-size: 18px;
+}
+
+.curve {
+  position: absolute; 
+  height: 225px; 
+  width: 100%; 
+  bottom: 0; 
+}
+
+.curve::before {
+  content: ''; 
+  display: block; 
+  position: absolute; 
+  border-radius: 100% 50%; 
+  width: 75%; 
+  height: 100%; 
+  background-color: #ccfffc; 
+  transform: translate(85%, 60%); 
+}
+
+.curve::after {
+  content: ''; 
+  display: block; 
+  position: absolute; 
+  border-radius: 100% 50%; 
+  width: 75%; 
+  height: 100%; 
+  background-color: #ccfffc; 
+  transform: translate(-20%, 80%); 
+}
+
+.curve-bubble {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve-bubble svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 102px;
+}
+
+.curve-bubble .shape-fill {
+  fill: #CCFFFC;
+}
+
+.waves-top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waves-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 40px;
+}
+
+.waves-top .shape-fill {
+  fill: #CCFFFC;
+}
+
+.waves-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.waves-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+.waves-bottom .shape-fill {
+  fill: #CCFFFC;
+}
+
+.blue-bottom-wave {
+  position: relative; 
+  margin-top: 10em;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.blue-bottom-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+.blue-bottom-wave .shape-fill {
+  fill: #0267fe;
+}
+
+.white-wave {
+  position: relative;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: scaleY(-1);
+}
+
+.white-wave svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 50px;
+}
+
+.white-wave .shape-fill {
+  fill: #0267fe;
+}
+
+.white-top-wave {
+  position: relative; 
+  bottom: 0; 
+  left: 0; 
+  width: 100vw; 
+  overflow: hidden; 
+  line-height: 0;
+}
+
+
+.white-top-wave .shape-fill {
+  fill: #afeeee; 
+}
+
+.header-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.header-waves svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 40px;
+}
+
+.header-waves .shape-fill{
+  fill: #19c2c2;
+}
+
+.header-waves-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.header-waves-opacity svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.header-waves-opacity .shape-fill {
+  fill: #19c2c2;
+}
+
+.header-waves-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.header-waves-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.header-waves-bottom .shape-fill {
+  fill: #CCFFFC;
+}
